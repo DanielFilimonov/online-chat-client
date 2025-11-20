@@ -1,6 +1,4 @@
-import React from "react";
 import styles from "./Messages.module.css";
-
 
 const Messages = ({ messages, name }) => {
 	return (

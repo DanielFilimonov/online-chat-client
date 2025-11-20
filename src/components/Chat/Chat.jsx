@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import io from "socket.io-client";
 import EmojiPicker from "emoji-picker-react";
 
 import styles from "./Chat.module.css";
-import icon from "./smile.svg";
 import Messages from "../Messages/Messages";
+import icon from "./smile.svg";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://online-chat-server-t5qo.onrender.com");
 
 const Chat = () => {
 	const { search } = useLocation();
@@ -39,7 +39,7 @@ const Chat = () => {
 
 	const leftRoom = () => {
 		socket.emit("leftRoom", { params });
-		navigate('/')
+		navigate("/");
 	};
 
 	const handleChange = ({ target: { value } }) => setMessage(value);
