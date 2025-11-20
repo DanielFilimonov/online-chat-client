@@ -1,4 +1,4 @@
-# **Приложения для заказа еды (SPA)**
+# **Онлайн чат на React**
  
 ![Static Badge](https://img.shields.io/badge/19.2-gray?logo=react&logoColor=white&label=React&labelColor=blue)
 ![Static Badge](https://img.shields.io/badge/Socket.io-green?logo=Socket.io)
